@@ -4,29 +4,67 @@
     <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      @media screen and (max-width: 600px) {
+        .form-container {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+    </style>
   </head>
   <body>
     <header id="header">
-      <img src="images/amazon.png" alt="" id="header-img"title="amazonpng">
+      <img
+        src="https://images.app.goo.gl/VmYZgbWvjBEAXMP1A"
+        alt=""
+        id="header-img"
+        title="amazonpng"
+      />
       <nav id="nav-bar">
         <a class="nav-link" href="#features">Features</a>
         <a class="nav-link" href="#works">How It Works</a>
         <a class="nav-link" href="#pricing">Pricing</a>
       </nav>
     </header>
-    <form action="https://www.freecodecamp.com/email-submit" method="get" id="form">
-      <label for="email">Enter your email for select discounts</label>
-      <input type="email" name="emailform" id="email" required="required" value="email" placeholder="Enter your email address">
-      <label for="submit"></label>
-      <input type="submit" id="submit">Submit</input>
-    </form>
+    <div class="container">
+      <div class="form-container">
+        <iframe
+          class="video"
+          id="video"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/DkxFko8NV6Q"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+
+        <form
+          action="https://www.freecodecamp.com/email-submit"
+          method="get"
+          id="form"
+        >
+          <label for="email">Enter your email for select discounts</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required="required"
+            emailform="email"
+            placeholder="Enter your email address"
+          />
+          <label for="submit"></label>
+          <input type="submit" id="submit" />
+        </form>
+      </div>
+    </div>
+
     <a id="features"></a>
     <a id="works"></a>
     <a id="pricing"></a>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="js/index.js"></script>
-    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/DkxFko8NV6Q" frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; 
-    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </body>
 </html>
